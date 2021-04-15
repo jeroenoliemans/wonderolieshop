@@ -9,6 +9,8 @@ import { DetailComponent } from './detail/detail.component';
 import { BasketComponent } from './basket/basket.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
+import {LogService} from './services/log.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,9 @@ import { NavigationComponent } from './navigation/navigation.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    LogService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
