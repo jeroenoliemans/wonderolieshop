@@ -88,7 +88,6 @@ h1 {
    --graphic-color: #D9E8F5;
    --white-color: #FFFFFF;
    --text: #222222;
-   --logo-color: #8acccc;
    --highlight-color: #F26101;
    --highlight-color-hover: #b64d07;
  }
@@ -160,7 +159,7 @@ nav {
 }
 
 main {
-  background-color: white;
+  background-color: var(--white-color);
   margin: 0 auto;
   max-width: 1240px; 
   padding: 2rem 1rem;  
@@ -171,7 +170,7 @@ main {
 .nav-inner a:active, 
 .nav-inner a:visited {
   font-weight: bold;
-  color: #fff;
+  color: var(--white-color);
   margin-right: 1rem;
   text-decoration: none;
 }
@@ -188,7 +187,7 @@ main {
     display: block;
     text-align: center;
     background: var(--highlight-color);
-    color: white;
+    color: var(--white-color);
     padding: 0.5rem;
     margin: 1rem 0;
     border-radius: 5px;
@@ -258,7 +257,7 @@ main {
   justify-content: center;
   height: 300px;
   padding: 50px;
-  background: #fff;
+  background: var(--white-color);
 }
 
 .product-thumb img {
