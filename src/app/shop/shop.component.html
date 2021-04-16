@@ -3,7 +3,7 @@
 <section class="product-grid">
     <article class="product-card" *ngFor="let product of products">
         <div class="product-thumb">
-            <img src="{{product.image}}" alt="">
+            <img alt="{{product.name}}" src="{{product.image}}" alt="">
         </div>
         <h2>{{product.name}}</h2>
         <footer class="product-footer">
