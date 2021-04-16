@@ -37,4 +37,14 @@ export class BasketComponent implements OnInit {
     this.basketService.decreaseQuantity(productId)
       .subscribe(basketItems => this.basketItems = basketItems);
   }
+
+  get totalCost(): number {
+    let totalPrice = 0;
+
+    this.basketItems.forEach(basketItem => {
+      totalPrice += (basketItem.price * basketItem.quantity)
+    });
+
+    return totalPrice;
+  }
 }

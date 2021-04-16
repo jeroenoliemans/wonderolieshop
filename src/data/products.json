@@ -2,23 +2,45 @@
     {
         "id": 1,
         "image": "./assets/wonderoil.jpg",
-        "name": "Wonderolie regular",
+        "name": "Wonderoil regular",
         "price": 6.50,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
         "id": 2,
         "image": "./assets/wonderoil2.jpg",
-        "name": "Wonderolie extra",
+        "name": "Wonderoil extra",
         "price": 10,
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodt labore et dolore magna aliqua."
 
     },
     {
         "id": 3,
         "image": "./assets/wonderoil.jpg",
-        "name": "Wonderolie budget",
+        "name": "Wonderoil budget",
         "price": 12.50,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": 1,
+        "image": "./assets/wonderoil.jpg",
+        "name": "Wonderoil 200ml",
+        "price": 6.50,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": 2,
+        "image": "./assets/wonderoil2.jpg",
+        "name": "Wonderoil 1l",
+        "price": 17.50,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodt labore et dolore magna aliqua."
+
+    },
+    {
+        "id": 3,
+        "image": "./assets/wonderoil.jpg",
+        "name": "Wonderoil deluxe 50ml",
+        "price": 22.50,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
 ]

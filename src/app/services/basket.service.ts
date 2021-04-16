@@ -12,18 +12,29 @@ export class BasketService {
 
   constructor() { }
 
+
   addToBasket(product: Product):void {
-    // check if product id is availalable in array
-    // then increase amount
-    // otherwise
-    this.basketItems.push({
-      id: product.id,
-      name: product.name,
-      image: product.image,
-      price: product.price,
-      description: product.description,
-      quantity: 1
-    });
+    // check if product id is availalable in array then increase amount otherwise push
+    if (this.basketItems.some((basketItem) => basketItem.id === product.id)) {
+      this.basketItems.forEach(basketItem => {
+          if (basketItem.id === product.id) {
+            basketItem.quantity += 1;
+          }
+      });
+    } else {
+      this.basketItems.push({
+        id: product.id,
+        name: product.name,
+        image: product.image,
+        price: product.price,
+        description: product.description,
+        quantity: 1
+      });
+    }
+  }
+
+  productIsInBasket(): boolean {
+    return 
   }
 
   getBasketItems(): Observable<BasketItem[]> {
