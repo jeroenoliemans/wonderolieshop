@@ -1,0 +1,16 @@
+<h1>Your basket</h1>
+<section>
+    <article class="basket-row" *ngFor="let basketItem of basketItems">
+        <h3>{{basketItem.name}}</h3>
+        <div class="basket-item-quantity">
+            <button class="button-primary" (click)="decreaseQuantity(basketItem.id)" title="decrease quantity">-</button>
+            {{basketItem.quantity}}
+            <button class="button-primary" (click)="increaseQuantity(basketItem.id)" title="increase quantity">+</button>
+        </div>
+        <span class="product-price">{{basketItem.price | currency:'EUR':true }}</span>
+    </article>
+</section>
+<footer class="basket-footer">
+    <button class="button-primary" title="clear the items in the basket" (click)="clearBasket()">Clear basket</button>
+    <span class="product-price price-total">Total cost: {{totalCost | currency:'EUR':true }}</span>
+</footer>

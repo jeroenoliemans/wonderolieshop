@@ -1,0 +1,16 @@
+<h1>Our products {{products.length}}</h1>
+
+<section class="product-grid">
+    <article class="product-card" *ngFor="let product of products">
+        <div class="product-thumb">
+            <img src="{{product.image}}" alt="">
+        </div>
+        <h2>{{product.name}}</h2>
+        <footer class="product-footer">
+            <div class="product-price">{{product.price | currency:'EUR':true }}</div>
+            <a class="button-primary" title="check the product" routerLink="/detail/{{product.id}}">Check product</a>
+        </footer>
+    </article>
+</section>
+
+
