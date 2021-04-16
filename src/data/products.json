@@ -1,18 +1,24 @@
 [
     {
         "id": 1,
+        "image": "./assets/wonderoil.jpg",
         "name": "Wonderolie regular",
+        "price": 6.50,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
         "id": 2,
+        "image": "./assets/wonderoil2.jpg",
         "name": "Wonderolie extra",
+        "price": 10,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
     },
     {
         "id": 3,
+        "image": "./assets/wonderoil.jpg",
         "name": "Wonderolie budget",
+        "price": 12.50,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
 ]

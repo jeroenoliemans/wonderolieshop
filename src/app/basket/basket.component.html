@@ -3,6 +3,11 @@
 <section>
     <article *ngFor="let basketItem of basketItems">
         <h3>{{basketItem.name}}</h3>
+        <div class="quantity">
+            <button (click)="decreaseQuantity(basketItem.id)" title="decrease quantity">-</button>
+            {{basketItem.quantity}}
+            <button (click)="increaseQuantity(basketItem.id)" title="increase quantity">+</button>
+        </div>
     </article>
     <button title="clear the items in the basket" (click)="clearBasket()">Clear basket</button>
 </section>

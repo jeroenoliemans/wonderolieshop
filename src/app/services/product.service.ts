@@ -14,7 +14,6 @@ export class ProductService {
   getProducts(): Product[] {
     let productItems: Product[] = products;
 
-
     return productItems;
   }
 

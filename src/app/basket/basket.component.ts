@@ -18,10 +18,23 @@ export class BasketComponent implements OnInit {
   }
 
   getBasketItems(): void {
-    this.basketItems = this.basketService.getBasketItems();
+    this.basketService.getBasketItems()
+      .subscribe(basketItems => this.basketItems = basketItems);
   }
 
   clearBasket(): void {
-    this.basketService.clearBasket();
+    this.basketService.clearBasket()
+      .subscribe(basketItems => this.basketItems = basketItems);
+  }
+
+  increaseQuantity(productId: number): void {
+    console.log(productId);
+    this.basketService.increaseQuantity(productId)
+      .subscribe(basketItems => this.basketItems = basketItems);
+  }
+
+  decreaseQuantity(productId: number): void {
+    this.basketService.decreaseQuantity(productId)
+      .subscribe(basketItems => this.basketItems = basketItems);
   }
 }
