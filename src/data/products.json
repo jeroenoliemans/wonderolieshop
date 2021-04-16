@@ -1,11 +1,18 @@
 [
     {
-        "name": "Wonderolie regular"
+        "id": 1,
+        "name": "Wonderolie regular",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-        "name": "Wonderolie extra"
+        "id": 2,
+        "name": "Wonderolie extra",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
     },
     {
-        "name": "Wonderolie budget"
+        "id": 3,
+        "name": "Wonderolie budget",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
 ]

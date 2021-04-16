@@ -17,4 +17,9 @@ export class ProductService {
 
     return productItems;
   }
+
+  getProduct(id: number): Product {
+    const product = products.find(product => product.id === id) as Product;
+    return product;
+  }
 }

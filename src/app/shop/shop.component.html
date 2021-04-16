@@ -3,5 +3,6 @@
 <section>
     <article *ngFor="let product of products">
         <h3>{{product.name}}</h3>
+        <a title="check the product" routerLink="/detail/{{product.id}}">Check</a>
     </article>
 </section>

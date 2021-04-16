@@ -1,1 +1,8 @@
 <p>basket works!</p>
+
+<section>
+    <article *ngFor="let basketItem of basketItems">
+        <h3>{{basketItem.name}}</h3>
+    </article>
+    <button title="clear the items in the basket" (click)="clearBasket()">Clear basket</button>
+</section>

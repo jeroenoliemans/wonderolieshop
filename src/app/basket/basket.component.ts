@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BasketItem } from '../interfaces/basketItem';
+import { BasketService } from '../services/basket.service';
 
 @Component({
   selector: 'app-basket',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasketComponent implements OnInit {
 
-  constructor() { }
+  basketItems: BasketItem[] = [];
+
+  constructor(private basketService: BasketService) { }
 
   ngOnInit(): void {
+    this.getBasketItems();
   }
 
+  getBasketItems(): void {
+    this.basketItems = this.basketService.getBasketItems();
+  }
+
+  clearBasket(): void {
+    this.basketService.clearBasket();
+  }
 }
