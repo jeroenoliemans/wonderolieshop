@@ -247,7 +247,7 @@ main {
   width: 100%;
   position: relative;
   box-shadow: 0 2px 7px var(--graphic-color);
-  margin: 50px auto;
+  margin: 0 auto;
   background: var(--graphic-color);
   padding: 1rem;
 }
